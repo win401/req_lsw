@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>title</title>
+    <style>
+        table {
+            background-color: lightblue;
+            border-collapse: collapse;
+
+        }
+
+        td {
+            border: 1px solid black;
+            width: 50px;
+            empty-cells: hide;
+        
+        }
+
+        .empty {
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="3" class="empty"></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            
+        </tr>
+
+    </table>
+</body>
+</html>

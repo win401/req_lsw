@@ -1,0 +1,15 @@
+소 tablestyle
+br 대신 span-> table .line 에 display block
+
+마진상쇄 현상 : 일반적인 흐름에서,
+                자식의 margin-top 과 부모의 margin-top 이 만나면 둘 중
+                큰값이 부모에게 적용
+                해결방법 -> 부모 요소에 overflow:hidden; 적용
+
+input txt 포커스 상태일때 테두리는 outline: none 으로 삭제 가능
+
+accent-color -> form radio,progress,range 등 스타일 적용
+
+position_static==================
+
+ 

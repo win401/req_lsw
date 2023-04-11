@@ -3,34 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>title</title>
+    <title>layoutEx3</title>
     <style>
-        h1 {
-            background-color: lightblue;
-            width: 940px;
+
+        body {
+            margin: 0;
         }
+
+        div {
+            border: 1px solid transparent;
+            width: 940px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            width: 940px;
+            text-align: center;
+            margin: 0 auto;
+            padding: 30px 0; 
+            
+        }
+        menu {
+            list-style: none;
+            text-align: center;
+            padding: 0;
+            margin: 0 auto;
+            width: 940px;
+            background-color: rgb(49, 178, 221);
+            height: 60px; line-height: 60px;
+            font-size: 20px;
+
+        }
+
+        menu li {
+            width: 100px;
+            display: inline-block;
+        }
+
+        menu li a {
+            color: white;
+        }
+
+        main {
+             background-color: rgb(253, 184, 25);
+             text-align: center;
+             height: 100px; line-height: 100px;
+             font-size: 30px;
+             width: 940px;
+             margin: 0 auto;
+             margin-bottom: 30px;
+            }
+
+        section {
+            float: left;
+            background-color: red;
+            width: 300px; height: 67px;
+            text-align: center;
+            margin-bottom: 30px;
+            overflow: hidden;
+            font-size: 20px;
+        }
+
+        .box1 {
+            margin-right: 20px;
+        }
+        .box2 {
+            margin-right: 20px;
+        }
+
+        footer {
+            clear: both;
+            background-color: rgb(101, 167, 145);
+            text-align: center;
+            height: 60px; line-height: 60px;
+            font-weight: bold;
+            font-size: 19px;
+        }
+
     </style>
 </head>
 <body>
-    <h1>로고</h1>
-    <menu>
-        <li><a href="#">홈</a></li>
-        <li><a href="#">상품</a></li>
-        <li><a href="#">소개</a></li>
-        <li><a href="#">서비스</a></li>
-        <li><a href="#">연락처</a></li>
-    </menu>
-    <main>
-        <p>컨텐츠</p>
-    </main>
-    <section>
-        <p>1번째 열</p>
-    </section>
-    <section>
-        <p>2번째 열</p>
-    </section>
-    <section>
-        <p>3번째 열</p>
-    </section>
+    <div>
+        <h1>로고</h1>
+        <menu>
+            <li><a href="#">홈</a></li>
+            <li><a href="#">상품</a></li>
+            <li><a href="#">소개</a></li>
+            <li><a href="#">서비스</a></li>
+            <li><a href="#">연락처</a></li>
+        </menu>
+
+        <main>
+            <p>컨텐츠</p>
+        </main>
+
+        <section class="box1">
+            <p>1번째 열</p>
+        </section>
+        <section class="box2">
+            <p>2번째 열</p>
+        </section>
+        <section class="box3">
+            <p>3번째 열</p>
+        </section>
+
+        <footer>
+            <p>&#169;copyright 2022</p>
+        </footer>
+    </div>    
 </body>
 </html>

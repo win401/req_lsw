@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>backgroundEx</title>
+    <style>
+        .container {
+            border: 3px solid black;
+            border-radius: 25px;
+            width: 500px; 
+            margin: 50px auto;
+            
+        }
+        
+        .gnb {
+            text-align: center;
+            list-style: none;
+            padding: 0;
+        }
+
+        .gnb li {
+
+        }
+
+        .gnb li #text {
+            width: 300px;
+            height: 40px;
+            border-radius: 25px;
+            margin: 10px 0;
+            background-color: rgb(176, 240, 255);
+            text-indent: 55px;
+            font-size: 20px;
+        }
+
+        .gnb li #text:focus {
+            background-color: rgb(50, 203, 254);
+        }
+
+        .gnb li .txt1 {
+            background-image: url(./images/user.png);
+            background-size: 35px;
+            background-repeat: no-repeat;
+            background-position: 5% 50%;
+        }
+
+        .gnb li .txt2 {
+            background-image: url(./images/mail.png);
+            background-size: 35px;
+            background-repeat: no-repeat;
+            background-position: 5% 50%;
+        }
+
+        .gnb li .txt3 {
+            background-image: url(./images/phone-call.png);
+            background-size: 35px;
+            background-repeat: no-repeat;
+            background-position: 5% 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="gnb">
+            <li><input type="text" id="text" class="txt1" placeholder="이름을 입력하세요"></li>
+            <li><input type="text" id="text" class="txt2" placeholder="이메일을 입력하세요"></li>
+            <li><input type="text" id="text" class="txt3" placeholder="연락처를 입력하세요"></li>
+        </ul>
+    </div>
+</body>
+</html>

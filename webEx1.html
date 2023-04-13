@@ -22,9 +22,9 @@
         }
         
         section {
-            background-color: rgb(99, 28, 165);
+            background-color: rgb(180, 46, 176);
             color: white;
-            background-image: url(../images/Leica_logo_Leica_Camera.png);
+            background-image: url(./images/Leica_logo_Leica_Camera.png);
             background-position: 30px ;
             background-size: 100px;
             background-repeat: no-repeat;
@@ -62,7 +62,13 @@
             font-size: 15px;
             font-weight: bold;
             color: rgb(117, 56, 145);
-            width: 100px;
+            width: 80px;
+        }
+
+        menu li a {
+            display: block;
+            text-decoration: none;
+            color: purple;
         }
 
         /******************** body ********************/
@@ -74,26 +80,43 @@
         } */
 
         article {
-            width: 65%;
+            width: 660px; height: 600px;
             background-color: rgb(201, 221, 240);
             padding: 10px;
         }
 
-        article .img1 {
+        article .img1, article .img2 {
+            background-color: white;
             border: 1px red solid;
             width: 300px; height: 230px;
-            background-image: url(../images/Big-Italian-Salad.jpg);
             background-size: 250px;
-            background-repeat: no-repeat;
-            background-position: 50%;
             object-fit: cover;
             float: left;
+            margin-right: 20px;
+            margin-left: 20px ;
         }
 
+        .img1 p {
+                margin: 0;
+        }
+
+        img {
+            width: 300px;
+            height: 230px;
+            object-fit: contain;
+        }
+
+        .img2 {
+            margin-bottom: 30px  ;
+        }
+
+        .txt1, .txt2 {
+            margin: 30px;
+        }
+        
         article, aside {
             float: left;
         }
-
 
         footer {
             clear: both;
@@ -107,6 +130,17 @@
             margin: 20px 0;
         }
 
+        aside {
+            height: 600px;
+            padding: 0 30px;
+            border-left: red solid 1px;
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0;
+        }
+
     </style>
 </head>
 <body>
@@ -117,17 +151,18 @@
                 <h2>cooking class</h2>
             </section>
             <menu>
-                <li>홈</li>
-                <li>소개</li>
-                <li>교실</li>
-                <li>케이터링</li>
-                <li>연락처</li>
+                <li><a href="#">홈</a></li>
+                <li><a href="#">소개</a></li>
+                <li><a href="#">교실</a></li>
+                <li><a href="#">케이터링</a></li>
+                <li><a href="#">연락처</a></li>
             </menu>
         </header>
 
         <article>
             <div class="main1">
                 <div class="img1">
+                    <p><img src="./images/salad.jpg" alt=""> salad</p>
                 </div>
                 <div class="txt1 clearfix">
                     <h3>채식주의자</h3>
@@ -137,7 +172,8 @@
             </div>
 
             <div class="main2">
-                <div class="img1">
+                <div class="img2">
+                    <p>sauce</p>
                 </div>
                 <div class="txt2 clearfix">
                     <h3>소스 마스터클래스</h3>
@@ -149,14 +185,14 @@
         </article>
 
         <aside>
-            <h2>인기요리법</h2>
+            <h3>인기요리법</h3>
             <ul>
                 <li>후라이드</li>
                 <li>고추바사삭</li>
                 <li>양념치킨</li>
                 <li>뿌링클</li>
             </ul>
-            <h2>연락처</h2>
+            <h3>연락처</h3>
             <ul>
                 <li>경기 수원시 팔달구 매산동</li>
             </ul>   

@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>webEx</title>
+    <link rel="icon" href="./images/Leica_logo_Leica_Camera.png" type="image/x-icon"> 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Rock+Salt&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+KR&family=Rock+Salt&display=swap');
+
+        body {
+            background-image: url(../images/woodtexture.jpg);
+        }
 
         .container {
-            border: 1px solid black;
-            width: 950px;
+            border: 4px solid rgb(255, 169, 169);
+            width: 940px;
             margin: 10px auto;
+            text-transform: capitalize;
+        }
+
+        menu, article, aside {
+            font-family: 'Noto Sans KR', sans-serif;
         }
 
         /****************** head ******************/
@@ -44,6 +54,7 @@
         section h2 {
             font-family: 'Rock Salt', cursive;
             margin: 0;
+            vertical-align: top;
         }
 
         menu {
@@ -71,6 +82,11 @@
             color: purple;
         }
 
+        menu li a:hover {
+            background-color: lightcoral;
+            color: white;
+        }
+
         /******************** body ********************/
 
         /* .img1 p, .img2 p {
@@ -80,15 +96,15 @@
         } */
 
         article {
-            width: 660px; height: 600px;
+            width: 657px; height: 600px;
             background-color: rgb(201, 221, 240);
-            padding: 10px;
+            /* padding: 10px; */
         }
 
         article .img1, article .img2 {
             background-color: white;
             border: 1px red solid;
-            width: 300px; height: 230px;
+            width: 300px; height: 228px;
             background-size: 250px;
             object-fit: cover;
             float: left;
@@ -96,14 +112,32 @@
             margin-left: 20px ;
         }
 
+        .img1, .img2 {
+            position: relative;
+        }
+
         .img1 p {
                 margin: 0;
         }
 
         img {
-            width: 300px;
-            height: 230px;
-            object-fit: contain;
+            width: 290px; height: 190px;
+            /* height: 230px; */
+            object-fit: cover;
+            position: absolute;
+            right: 6px; top: 6px;
+        }
+
+        .imgtxt1, .imgtxt2 {
+            position: absolute;
+            bottom: 3px; right: 10px;
+        }
+
+        article figure figcaption {
+            position: absolute;
+            bottom: 8px; right: 6px;
+            color: gray;
+            font-size: 13px;
         }
 
         .img2 {
@@ -112,6 +146,13 @@
 
         .txt1, .txt2 {
             margin: 30px;
+            
+        }
+
+        .txt1 h4, .txt2 h4 {
+            color: rgb(219, 3, 3);
+            font-size: 17px;
+            font-weight: bold;
         }
         
         article, aside {
@@ -122,30 +163,53 @@
             clear: both;
         }
 
-        article h3 {
-            margin: 0;
-        }
 
-        .main1 {
-            margin: 20px 0;
-        }
 
         aside {
-            height: 600px;
-            padding: 0 30px;
+            height: 600px; width: 282px;
             border-left: red solid 1px;
+            text-indent: 18px;
+            background-color: white;
+            text
+        }
+
+        aside h2 {
+            padding: 10px 0 20px 0; 
+            color: rgb(223, 0, 0);
         }
 
         aside ul {
             list-style: none;
             padding: 0;
+            font-size: 20px;
+            
+        }
+
+        aside .fried li {
+            border-bottom: red solid 1px;
+            padding: 18px 0;
+        }
+
+        aside .fried li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        /************** footer *****************/
+
+        footer {
+            height: 34px;
+            line-height: 34px;
+            padding-left: 20px;
+            background-color: rgb(180, 46, 176);
+            color: white;
         }
 
     </style>
 </head>
 <body>
     <div class="container">
-        <header class="clearfix">
+        <header>
             <section>
                 <h1>kim's kitchen</h1>
                 <h2>cooking class</h2>
@@ -162,7 +226,10 @@
         <article>
             <div class="main1">
                 <div class="img1">
-                    <p><img src="./images/salad.jpg" alt=""> salad</p>
+                    <figure>
+                        <img src="./images/salad.jpg" alt="salad" class="saladimg">
+                        <figcaption><em>oriental salad</em></figcaption> 
+                    </figure>
                 </div>
                 <div class="txt1 clearfix">
                     <h3>채식주의자</h3>
@@ -173,33 +240,35 @@
 
             <div class="main2">
                 <div class="img2">
-                    <p>sauce</p>
+                    <figure>
+                        <img src="./images/soy-sauce.jpg" alt="sauce" class="sauceimg">
+                        <figcaption><em>teriyaki</em></figcaption> 
+                    </figure>
                 </div>
                 <div class="txt2 clearfix">
                     <h3>소스 마스터클래스</h3>
                     <h4>1일 워크샵</h4>
-                    <p>1일 집중 코스에서는 다양한 욜에서 사용할 수 있는 가장 맛있는 소스를 만드는 방법을 살펴본다.</p>
+                    <p>1일 집중 코스에서는 다양한 요리에서 사용할 수 있는 가장 맛있는 소스를 만드는 방법을 살펴본다.</p>
                 </div>
             </div>
-
         </article>
 
         <aside>
-            <h3>인기요리법</h3>
-            <ul>
-                <li>후라이드</li>
-                <li>고추바사삭</li>
-                <li>양념치킨</li>
-                <li>뿌링클</li>
+            <h2>인기요리법</h2>
+            <ul class="fried">
+                <li><a href="#">후라이드</a></li>
+                <li><a href="#">고추바사삭</a></li>
+                <li><a href="#">양념치킨</a></li>
+                <li><a href="#">뿌링클</a></li>
             </ul>
-            <h3>연락처</h3>
+            <h2>연락처</h2>
             <ul>
                 <li>경기 수원시 팔달구 매산동</li>
             </ul>   
         </aside>
 
         <footer>
-            <p>kim's kitchen 김씨네 키친</p>
+            <p>&#169;kim's kitchen 김씨네 키친</p>
         </footer>
         
     </div>

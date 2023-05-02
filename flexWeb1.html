@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>flexWeb1</title>
+  <!-- <link rel="stylesheet" href="../common/minireset.min.css"> -->
+  <style>
+
+    body {
+      margin: 0;
+      line-height: 2;
+    }
+
+    :root {
+      --bgcolor1: #FEFAE0;
+      --bgcolor2: #FAEDCD;
+      --fontSizeh1: 5rem;
+      --fontSizeh2: 3rem;
+      --fontSizeh5: 0.8rem; 
+      
+    }
+
+    /* header */
+
+    header {
+      height: 100vh; width: 100vw;
+      background-color: var(--bgcolor1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      
+    }
+
+    header .header_innr {
+      margin: 0 auto;
+      width: 50vw;
+    }
+
+    header h1 {
+      font-size: var(--fontSizeh1);
+      text-transform: capitalize;
+    }
+
+    header h5 {
+      font-size: var(--fontSizeh5);
+    }
+
+    header p {
+      /* margin-bottom: 50px; */
+    }
+
+    button {
+      border: 1px solid #959c7d ;
+      border-radius: 30px;
+      width: 150px;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      margin-top: 30px;
+      font-weight: bold;
+      background-color: transparent;
+    }
+
+    .line1 {
+      background-color: #CCD5AE;
+
+      width: 100vw; height: 100vh;
+      display: flex;
+    }
+
+    .line1 .txt {
+      width: 30%; height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 100px;
+    }
+
+    .line1 .txt h5 {
+      font-size: var(--fontSizeh5);
+    }
+
+    .line1 .txt h2 {
+      font-size: var(--fontSizeh2);
+    }
+
+
+
+    .line1 .img {
+      width: 70%; height: 100%;
+      object-fit: cover;
+      /* object-position: 30% 50%; */
+      overflow: hidden;
+      
+    }
+
+    .line1 .img img {
+      height: 100%;
+    }
+
+    /* line2 */
+
+    .line2 {
+      display: flex;
+      background-color: var(--bgcolor1);
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .line2 div {
+      width: 30vw;
+    }
+
+    .line2 h2 {font-size: var(--fontSizeh2);}
+    .line2 h5 {font-size: var(--fontSizeh5);}
+
+    /* line3 */
+
+
+
+
+    
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header_innr">
+      <h5>aliquam consequat</h5>
+      <h1>sed amet</h1>
+      <p>generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristicgenerated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristicwords etc.</p>
+      <button> s a g i t t i s</button>
+    </div>
+  </header>
+  <main>
+    <section class="line1">
+      <div class="txt">
+        <h5>aliquam consequat</h5>
+        <h2>morbi tincidat</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio officiis quas ducimus nulla accusantium rerum alias. Dolore facilis quos, est, magni, cupiditate excepturi distinctio quaerat earum officiis velit adipisci neque.</p>
+        <button>sagittis</button>
+      </div>
+      <div class="img img2"><img src="./images/img1.jpg" alt=""></div>
+    </section>
+
+    <section class="line2">
+      <div class="txt1">
+        <h5>aliquam consequat</h5>
+        <h2>morbi tincidat</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio officiis quas ducimus nulla accusantium rerum alias. Dolore facilis quos, est, magni, cupiditate excepturi distinctio quaerat earum officiis velit adipisci neque.</p>
+        <button>sagittis</button>
+      </div>
+      <div class="txt2">
+        <h5>aliquam consequat</h5>
+        <h2>morbi tincidat</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio officiis quas ducimus nulla accusantium rerum alias. Dolore facilis quos, est, magni, cupiditate excepturi distinctio quaerat earum officiis velit adipisci neque.</p>
+        <button>sagittis</button>
+      </div>
+    </section>
+    
+    <section class="line3">
+      <div class="img img2"><img src="./images/img2.jpg" alt=""></div>
+      <div class="txt">
+        <h5>aliquam consequat</h5>
+        <h2>morbi tincidat</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio officiis quas ducimus nulla accusantium rerum alias. Dolore facilis quos, est, magni, cupiditate excepturi distinctio quaerat earum officiis velit adipisci neque.</p>
+        <button>sagittis</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <h5>aliquam consequat</h5>
+    <h1>auctor orci</h1>
+    <p>generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+    <button>sagittis</button>
+
+  </footer>
+</body>
+</html>

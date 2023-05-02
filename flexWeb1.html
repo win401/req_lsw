@@ -6,11 +6,32 @@
   <title>flexWeb1</title>
   <!-- <link rel="stylesheet" href="../common/minireset.min.css"> -->
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+    html {scroll-behavior: smooth;}
 
     body {
       margin: 0;
       line-height: 2;
+      overflow: auto;
+      overflow-x: hidden;
     }
+
+    body::-webkit-scrollbar {width: 5px;}
+    body::-webkit-scrollbar-thumb {background-color: rgb(215, 86, 0);}
+    body::-webkit-scrollbar-track {background-color: var(--bgcolor1);}
+
+    p, h1, h2, h5 {
+      margin: 0;
+    }
+
+    h1, h2, h5 {
+      font-family: 'Great Vibes', cursive;
+    }
+
+    h1 {font-size: var(--fontSizeh1);}
+    h2 {font-size: var(--fontSizeh2);}
+    h5 {font-size: var(--fontSizeh5);}
 
     :root {
       --bgcolor1: #FEFAE0;
@@ -24,11 +45,11 @@
     /* header */
 
     header {
-      height: 100vh; width: 100vw;
+      height: 90vh; width: 100vw;
       background-color: var(--bgcolor1);
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: center
       
     }
 
@@ -38,16 +59,18 @@
     }
 
     header h1 {
+      margin: 0;
       font-size: var(--fontSizeh1);
       text-transform: capitalize;
     }
 
     header h5 {
+      margin: 0;
       font-size: var(--fontSizeh5);
     }
 
     header p {
-      /* margin-bottom: 50px; */
+      margin: 0;
     }
 
     button {
@@ -62,9 +85,9 @@
     }
 
     .line1 {
-      background-color: #CCD5AE;
+      background-color:var(--bgcolor2);
 
-      width: 100vw; height: 100vh;
+      width: 100vw; height: 90vh;
       display: flex;
     }
 
@@ -103,7 +126,7 @@
     .line2 {
       display: flex;
       background-color: var(--bgcolor1);
-      height: 100vh;
+      height: 90vh; width: 100vw;
       justify-content: center;
       align-items: center;
     }
@@ -112,10 +135,90 @@
       width: 30vw;
     }
 
+    .line2 div p {
+      width: 90%;
+    }
+
     .line2 h2 {font-size: var(--fontSizeh2);}
     .line2 h5 {font-size: var(--fontSizeh5);}
 
     /* line3 */
+
+    .line3 {
+      height: 90vh;
+      width: 100vw;
+      display: flex;
+      background-color: var(--bgcolor2);
+
+    }
+
+    .line3 .imgbox {
+      width: 70%; height: 100%;
+      overflow: hidden;
+    }
+
+    .line3 .imgbox img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+    } 
+
+    .line3 .txt {
+      width: 30%; height: 100%;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 100px;
+    }
+
+    /* footer */
+
+    footer {
+      height: 90vh; width: 100vw;
+      background-color: var(--bgcolor1);
+      display: flex;
+      flex-direction: column;
+      justify-content: center
+
+    }
+
+    footer .footer_innr {
+      width: 60vw;
+      margin: 0 auto;
+    }
+
+    footer input {
+      width: 500px;
+      border: 1px solid #959c7d ;
+      border-radius: 30px;
+      padding: 10px 20px;
+    }
+
+    footer .iconbox {
+      margin-top: 30px;
+    }
+
+    footer .iconbox img {
+      width: 3rem;
+    }
+
+    .top {
+      position: fixed;
+      top: 90vh; right: 50px;
+      width: 50px; aspect-ratio: 1;
+      text-align: center;
+      line-height: 50px;
+      background-color: #959c7d;
+      cursor: pointer;
+      border-radius: 50%;
+      opacity: 0.6;
+      
+    }
+
+    .top:hover {
+      opacity: 1;
+      transform: scale(1.1);
+    }
 
 
 
@@ -127,7 +230,7 @@
   <header>
     <div class="header_innr">
       <h5>aliquam consequat</h5>
-      <h1>sed amet</h1>
+      <h1>arizona</h1>
       <p>generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristicgenerated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristicwords etc.</p>
       <button> s a g i t t i s</button>
     </div>
@@ -135,12 +238,12 @@
   <main>
     <section class="line1">
       <div class="txt">
-        <h5>aliquam consequat</h5>
-        <h2>morbi tincidat</h2>
+        <h5>aliqum consequat</h5>
+        <h2>Grand Canyon</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio officiis quas ducimus nulla accusantium rerum alias. Dolore facilis quos, est, magni, cupiditate excepturi distinctio quaerat earum officiis velit adipisci neque.</p>
-        <button>sagittis</button>
+        <button>s a g i t t i s</button>
       </div>
-      <div class="img img2"><img src="./images/img1.jpg" alt=""></div>
+      <div class="img img2"><img src="./images/grandCanyon.jpeg" alt="img1"></div>
     </section>
 
     <section class="line2">
@@ -148,32 +251,44 @@
         <h5>aliquam consequat</h5>
         <h2>morbi tincidat</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio officiis quas ducimus nulla accusantium rerum alias. Dolore facilis quos, est, magni, cupiditate excepturi distinctio quaerat earum officiis velit adipisci neque.</p>
-        <button>sagittis</button>
+        <button>s a g i t t i s</button>
       </div>
       <div class="txt2">
         <h5>aliquam consequat</h5>
         <h2>morbi tincidat</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio officiis quas ducimus nulla accusantium rerum alias. Dolore facilis quos, est, magni, cupiditate excepturi distinctio quaerat earum officiis velit adipisci neque.</p>
-        <button>sagittis</button>
+        <button>s a g i t t i s</button>
       </div>
     </section>
+    <div class="top" onclick="window.scrollTo(0,0)">
+      Top
+    </div>
+
     
     <section class="line3">
-      <div class="img img2"><img src="./images/img2.jpg" alt=""></div>
+      <div class="imgbox"><img src="./images/grandcanyon2.jpeg" alt="img2"></div>
       <div class="txt">
         <h5>aliquam consequat</h5>
         <h2>morbi tincidat</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio officiis quas ducimus nulla accusantium rerum alias. Dolore facilis quos, est, magni, cupiditate excepturi distinctio quaerat earum officiis velit adipisci neque.</p>
-        <button>sagittis</button>
+        <button>s a g i t t i s</button>
       </div>
     </section>
   </main>
   <footer>
-    <h5>aliquam consequat</h5>
-    <h1>auctor orci</h1>
-    <p>generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
-    <button>sagittis</button>
-
+    <div class="footer_innr">
+      <h5>aliquam consequat</h5>
+      <h1>auctor orci</h1>
+      <p>generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+      <input type="email" placeholder="Email">
+      <button>s a g i t t i s</button>
+      <div class="iconbox">
+        <img src="./images/facebook.png" alt="icon1">
+        <img src="./images/insta.png" alt="icon2">
+        <img src="./images/twitter.png" alt="icon3">
+        <img src="./images/message.png" alt="icon4">
+      </div>
+    </div>
   </footer>
 </body>
 </html>

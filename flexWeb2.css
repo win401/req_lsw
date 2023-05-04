@@ -1,34 +1,420 @@
 @charset "utf-8";
 
-.mov-box {
-  width: 100%;
-  height: 100vh;
-  /* padding-top: 56.25%; */
+
+
+:root {
+  --h1size:5rem;
+  --h2size:4rem;
+  --h3size:2rem;
+  --h4size:1rem;
+  --h5size:1rem;
+  --font:'Noto Sans KR', sans-serif;
 }
 
-.youtube {
+h1 {font-size: var(--h1size);}
+h2 {font-size: var(--h2size);}
+h3 {font-size: var(--h3size);}
+h4 {font-size: var(--h4size);}
+h5 {font-size: var(--h5size);}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 100;
+}
+
+/* header */
+
+header{position: relative; height: 100vh; overflow: hidden;}
+
+.mov-box {
+  height: 100vh;
+}
+
+/* .youtube {
   width: 100%;
   height: 100%;
-}
+} */
 
 header .container {
   display: flex;
+  justify-content: space-between;
   position: fixed;
   top: 0;
-  background-color: rgba(179, 179, 179, 0.8);
+  background-color: rgba(110, 110, 110, 0.5);
   width: 100%;
   height: 100px;
   align-items: center;
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-bottom: 0.01px solid rgb(209, 209, 209);
+  z-index: 9999;
 }
 
 header .container menu {
+  width: 45%;
   display: inherit;
+  justify-content: space-between;
 }
 
 header .container .logo {
-  width: 200px;
+  width: 15%;
+  min-width: 200px;
+  max-width: 150px;
+  margin-left: 2%;
 }
 
 header .container .logo img {
   width: 100%;
 }
+
+header .rightmenu {
+  margin-right: 2%;
+  /* width: 25%; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+header .container .sidelogo {
+  background-color: #f5821f;
+  border-radius: 20px;
+  padding: 5px 20px;
+  /* width: 130px; */
+  font-size: 0.8rem;
+  /* position: relative; */
+}
+
+header .container .sidelogo svg {
+  fill: white;
+  width: 15px;
+  margin-right: 5px;
+}
+
+header .mov-txtbox {
+  position: absolute;
+  color: white;
+  top: 40%;
+  margin-left: 10%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px black;
+}
+
+header .mov-txtbox h2 {
+  text-indent: 30px;
+  line-height: 1.2;
+}
+
+header .mov-txtbox h5 {
+  position: absolute;
+  left: 30px;
+  text-indent: 15px;
+}
+
+header .mov-txtbox span {
+  font-weight: 700;
+}
+
+header .gradient1 {
+  position: absolute;
+  top: 0;
+}
+
+header .gradient2 {
+  position: absolute;
+  top: 250px;
+}
+
+header .gradient3 {
+  position: absolute;
+  top: 0; left: -15px;
+}
+
+header .gradient4 {
+  position: absolute;
+  bottom: 0;
+}
+
+header .gradient5 {
+  position: absolute;
+  bottom: 0; left: -2px;
+}
+
+/* main mainbox1 */
+
+main h3 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 3rem;
+}
+
+main p {
+  font-weight: 400;
+  margin-bottom: 80px;
+  color: rgb(117, 117, 117);
+}
+
+main h2 {
+  color: #f5821f;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+
+main .mainbox1 {
+  padding: 10%;
+}
+
+main .txt-box {
+  text-align: center;
+  text-transform: capitalize;
+}
+main .txt-box h3 {
+  margin: 20px 0;
+}
+
+main .txt-box h2 {
+  color: #f5821f;
+  font-weight: bold;
+  font-size: 1.6rem;
+  /* margin: 30px 0; */
+}
+main .txt-box p {
+  font-weight: 400;
+  margin-bottom: 80px;
+  color: rgb(117, 117, 117);
+}
+
+
+
+main .iconbox {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.main .iconbox1 svg {
+  height: 30px; width: 30px;
+}
+
+main .iconbox .h3sidetxt {
+  font-size: 1rem;
+  font-family:var(--font);
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+main .iconbox svg {
+  margin-bottom: 30px;
+}
+
+main .iconbox h3 {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+
+main .iconbox1 h3::after {
+  content: "";
+  height: 1px;
+  width: 25px;
+  background-color: black;
+  position: absolute;
+  bottom: -15px; left: 50px;
+}
+
+main .iconbox2 h3::after {
+  content: "";
+  height: 1px;
+  width: 25px;
+  background-color: black;
+  position: absolute;
+  bottom: -15px; left: 100px;
+}
+
+main .iconbox3 h3::after {
+  content: "";
+  height: 1px;
+  width: 25px;
+  background-color: black;
+  position: absolute;
+  bottom: -15px; left: 69px;
+}
+
+main .iconbox4 h3::after {
+  content: "";
+  height: 1px;
+  width: 25px;
+  background-color: black;
+  position: absolute;
+  bottom: -15px; left: 62px;
+}
+
+/* main mainbox2 */
+
+main .mainbox2 {
+  position: relative;
+}
+
+main .mainbox2 .txt-box1 {
+  text-align: center;
+}
+
+
+
+main .mainbox2 .txt-img-box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+main .mainbox2 .left-txt-box {
+  background-color: #ebebeb;
+  width: 1000px; height: 585px;
+  /* transform: translateY(-50px); */
+  position: absolute;
+  left: 0; bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+main .mainbox2 .left-txt-box ul {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  color: #707070;
+}
+
+main .mainbox2 .left-txt-box ul li {
+  position: relative;
+  transition: 0.5s;
+}
+
+main .mainbox2 .left-txt-box ul li::after {
+  content: "";
+  height: 3px; width: 100%;
+  background-color: #f5821f;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+main .mainbox2 .left-txt-box ul li:hover::after {
+  opacity: 1;
+}
+
+main .mainbox2 .left-txt-box ul li:hover {
+  color: #f5821f;
+}
+
+ 
+
+main .mainbox2 .left-txt-box p {
+  width: 70%;
+  text-align: center;
+}
+
+main .mainbox2 .right-img-box {
+  z-index: 999;
+}
+
+main .mainbox2 .more {
+  position: absolute;
+  top: 60%; left: 46%;
+  background-color: #f5821f;
+  z-index: 999;
+  width: 150px; height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  text-transform: capitalize;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+main .mainbox2 .more a {
+  display: block;
+}
+
+main .mainbox2 .more:hover {
+  border-radius: 20px;
+}
+
+/* main mainbox3 */
+
+main .mainbox3 {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100vw;
+}
+
+main .mainbox3 p {
+  margin-bottom: 30px;
+}
+
+main .mainbox3 ul {
+  display: flex;
+  font-size: 1.2rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  /* font-weight: 500; */
+  text-transform: uppercase;
+  width: 50%;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+main .mainbox3 ul li a {
+  display: block;
+  transition: 0.3s;
+}
+
+main .mainbox3 ul li a:hover {
+  color: #f5821f;
+}
+
+main .mainbox3 .kakaomap {
+  width: 100%;
+}
+
+main .mainbox3 .kakaomap img {
+  width: 100%;
+}
+
+main .mainbox3 .more {
+  background-color: #f5821f;
+  z-index: 999;
+  width: 150px; height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  text-transform: capitalize;
+  font-weight: 500;
+  transition: 0.5s;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -3,19 +3,35 @@
 
 
 :root {
-  --h1size:5rem;
-  --h2size:4rem;
-  --h3size:2rem;
-  --h4size:1rem;
-  --h5size:1rem;
-  --font:'Noto Sans KR', sans-serif;
+  --h1size: 5rem;
+  --h2size: 4rem;
+  --h3size: 2rem;
+  --h4size: 1rem;
+  --h5size: 1rem;
+  --font: 'Noto Sans KR', sans-serif;
+  --engfont: 'play';
 }
 
-h1 {font-size: var(--h1size);}
-h2 {font-size: var(--h2size);}
-h3 {font-size: var(--h3size);}
-h4 {font-size: var(--h4size);}
-h5 {font-size: var(--h5size);}
+h1 {
+  font-size: var(--h1size);
+}
+
+h2 {
+  font-size: var(--h2size);
+}
+
+h3 {
+  font-size: var(--h3size);
+}
+
+h4 {
+  font-size: var(--h4size);
+  font-family: var(--engfont);
+}
+
+h5 {
+  font-size: var(--h5size);
+}
 
 body {
   font-family: 'Noto Sans KR', sans-serif;
@@ -24,7 +40,11 @@ body {
 
 /* header */
 
-header{position: relative; height: 100vh; overflow: hidden;}
+header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
 
 .mov-box {
   height: 100vh;
@@ -40,7 +60,7 @@ header .container {
   justify-content: space-between;
   position: fixed;
   top: 0;
-  background-color: rgba(110, 110, 110, 0.5);
+  background-color: rgba(154, 154, 154, 0.1);
   width: 100%;
   height: 100px;
   align-items: center;
@@ -57,7 +77,9 @@ header .container menu {
   justify-content: space-between;
 }
 
-header .container li{transition: 0.3s;}
+header .container li {
+  transition: 0.3s;
+}
 
 header .container li:hover {
   color: #f5821f;
@@ -133,7 +155,8 @@ header .gradient2 {
 
 header .gradient3 {
   position: absolute;
-  top: 0; left: -15px;
+  top: 0;
+  left: -15px;
 }
 
 header .gradient4 {
@@ -143,13 +166,15 @@ header .gradient4 {
 
 header .gradient5 {
   position: absolute;
-  bottom: 0; left: -2px;
+  bottom: 0;
+  left: -2px;
 }
 
 header .abmenu1 {
   text-align: center;
   position: absolute;
-  top: 36%; right: 50px;
+  top: 36%;
+  right: 50px;
   background-color: rgba(110, 110, 110, 0.8);
   border-radius: 50%;
   aspect-ratio: 1;
@@ -171,7 +196,7 @@ header .abmenu1 svg {
 }
 
 header .abmenu1:hover {
-  background-image: linear-gradient(to right bottom, rgb(255, 208, 107) 1%, #f5821f );
+  background-image: linear-gradient(to right bottom, rgb(255, 208, 107) 1%, #f5821f);
   opacity: 0.9;
 }
 
@@ -179,7 +204,8 @@ header .abmenu1:hover {
 header .abmenu2 {
   text-align: center;
   position: absolute;
-  top: 50%; right: 50px;
+  top: 50%;
+  right: 50px;
   background-color: rgba(110, 110, 110, 0.8);
   border-radius: 50%;
   aspect-ratio: 1;
@@ -195,7 +221,7 @@ header .abmenu2 {
 }
 
 header .abmenu2:hover {
-  background-image: linear-gradient(to right bottom, rgb(255, 208, 107) 1%, #f5821f );
+  background-image: linear-gradient(to right bottom, rgb(255, 208, 107) 1%, #f5821f);
   opacity: 0.9;
 
 }
@@ -211,7 +237,7 @@ header .abmenu2 svg {
 /* main mainbox1 */
 
 main h3 {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'play', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 3rem;
 }
 
@@ -235,6 +261,7 @@ main .txt-box {
   text-align: center;
   text-transform: capitalize;
 }
+
 main .txt-box h3 {
   margin: 20px 0;
 }
@@ -245,6 +272,7 @@ main .txt-box h2 {
   font-size: 1.6rem;
   /* margin: 30px 0; */
 }
+
 main .txt-box p {
   font-weight: 400;
   margin-bottom: 80px;
@@ -258,12 +286,13 @@ main .iconbox {
 }
 
 .main .iconbox1 svg {
-  height: 30px; width: 30px;
+  height: 30px;
+  width: 30px;
 }
 
 main .iconbox .h3sidetxt {
   font-size: 1rem;
-  font-family:var(--font);
+  font-family: var(--font);
   font-weight: 100;
   text-transform: uppercase;
 }
@@ -284,7 +313,8 @@ main .iconbox1 h3::after {
   width: 25px;
   background-color: black;
   position: absolute;
-  bottom: -15px; left: 50px;
+  bottom: -15px;
+  left: 45px;
 }
 
 main .iconbox2 h3::after {
@@ -293,7 +323,8 @@ main .iconbox2 h3::after {
   width: 25px;
   background-color: black;
   position: absolute;
-  bottom: -15px; left: 100px;
+  bottom: -15px;
+  left: 120px;
 }
 
 main .iconbox3 h3::after {
@@ -302,7 +333,8 @@ main .iconbox3 h3::after {
   width: 25px;
   background-color: black;
   position: absolute;
-  bottom: -15px; left: 69px;
+  bottom: -15px;
+  left: 65px;
 }
 
 main .iconbox4 h3::after {
@@ -311,7 +343,8 @@ main .iconbox4 h3::after {
   width: 25px;
   background-color: black;
   position: absolute;
-  bottom: -15px; left: 62px;
+  bottom: -15px;
+  left: 56px;
 }
 
 /* main mainbox2 */
@@ -331,10 +364,12 @@ main .mainbox2 .txt-img-box {
 
 main .mainbox2 .left-txt-box {
   background-color: #ebebeb;
-  width: 1000px; height: 585px;
+  width: 1000px;
+  height: 585px;
   /* transform: translateY(-50px); */
   position: absolute;
-  left: 0; bottom: 50px;
+  left: 0;
+  bottom: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -356,10 +391,12 @@ main .mainbox2 .left-txt-box ul li {
 
 main .mainbox2 .left-txt-box ul li::after {
   content: "";
-  height: 3px; width: 100%;
+  height: 3px;
+  width: 100%;
   background-color: #f5821f;
   position: absolute;
   left: 0;
+  top: -10px;
   opacity: 0;
   transition: 0.3s;
 }
@@ -383,10 +420,12 @@ main .mainbox2 .right-img-box {
 
 main .mainbox2 .more {
   position: absolute;
-  top: 60%; left: 46%;
+  top: 60%;
+  left: 46%;
   background-color: #f5821f;
   z-index: 999;
-  width: 150px; height: 40px;
+  width: 150px;
+  height: 40px;
   line-height: 40px;
   text-align: center;
   color: white;
@@ -421,7 +460,7 @@ main .mainbox3 p {
 main .mainbox3 ul {
   display: flex;
   font-size: 1.2rem;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'play', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   /* font-weight: 500; */
   text-transform: uppercase;
   width: 50%;
@@ -444,38 +483,221 @@ main .mainbox3 .kakaomap {
 
 main .mainbox3 .kakaomap img {
   width: 100%;
+  margin-bottom: 30px;
 }
 
 main .mainbox3 .more {
   background-color: #f5821f;
-  z-index: 999;
-  width: 150px; height: 40px;
+  /* z-index: 999; */
+  width: 150px;
+  height: 40px;
   line-height: 40px;
   text-align: center;
   color: white;
   text-transform: capitalize;
   font-weight: 500;
   transition: 0.5s;
+  cursor: pointer;
+}
+
+main .mainbox3 .more:hover {
+  border-radius: 20px;
 }
 
 
+/* main main4 */
+
+main .mainbox4 {
+  width: 90%;
+  margin: 50px auto;
+}
+
+main .mainbox4 .txt-img-box {
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: 500;
+}
+
+main .mainbox4 .txt-img-box .imgbox {
+  width: 35%;
+  height: 410px;
+  position: relative;
+}
+
+main .mainbox4 .txt-img-box .imgbox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+main .mainbox4 .txt-img-box .imgbox .absolute-txt {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .mainbox4 .txt-img-box .imgbox .absolute-txt p {
+  color: inherit;
+  font-size: var(--h3size);
+  width: 80%;
+  text-align: center;
+}
+
+main .mainbox4 .txt-img-box .imgbox .absolute-txt span {
+  margin-bottom: 30px;
+}
 
 
+main .mainbox4 .txt-img-box .imgbox .absolute-txt .submit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f5821f;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+main .mainbox4 .txt-img-box .imgbox .absolute-txt .whitesub {
+  background-color: transparent;
+  border: 1px solid white;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+/* main .main4 notice */
+
+main .mainbox4 .noticebox {
+  position: relative;
+}
+
+main .mainbox4 .noticebox h4 {
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-family: 'play', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-bottom: 40px;
+}
+
+main .mainbox4 .noticebox a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  border: 2px solid rgb(187, 187, 187);
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+main .mainbox4 .noticebox .ulbox {
+  display: flex;
+  height: 70%;
+  color: #707070;
+}
+
+main .mainbox4 .noticebox .ul1 {
+  margin-right: 30px;
+}
+
+main .mainbox4 .noticebox .ul2 {
+  color: #c3c3c3;
+}
 
 
+main .mainbox4 .noticebox .ulbox li {
+  margin-bottom: 40px;
+  position: relative;
+}
 
+main .mainbox4 .noticebox .ulbox li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+  background-color: #d7d7d7;
+  width: 120%;
+  height: 2px;
+}
 
+/* main .mainbox4 .recruit-box */
 
+main .mainbox4 .recruit-box {
+  position: relative;
+}
 
+main .mainbox4 .recruit-box .imgbox {
+  width: 100%;
+}
 
+main .mainbox4 .recruit-box .txtbox {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
 
+main .mainbox4 .recruit-box .txtbox h4 {
+  font-size: 2rem;
+  color: #f5821f;
+  text-transform: capitalize;
+}
 
+main .mainbox4 .recruit-box a {
+  position: absolute;
+  bottom: 30px;
+  left: 100px;
+  background-color: #f5821f;
+  color: white;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 0.8rem;
+}
 
+/* footer */
 
+footer .logobar {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #efefef;
+  padding: 30px 0;
+}
 
+footer .footbar {
+  background-color: #313131;
+  color: rgb(168, 168, 168);
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+}
 
+footer .footbar .leftbox img,
+footer .footbar .leftbox p {
+  margin-bottom: 30px;
+}
 
+footer .footbar .rightbox ul {
+  display: flex;
+  margin-bottom: 50px;
+}
 
+footer .footbar .rightbox ul li {
+  margin-right: 10px;
+  border-bottom: transparent solid 1px;
+}
 
-
-
+footer .footbar .rightbox ul li:hover {
+  border-bottom: 1px solid rgb(222, 222, 222);
+}

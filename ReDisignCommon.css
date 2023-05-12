@@ -28,6 +28,8 @@ Paragraph / Noto Sanse KR Light / 13 */
 
 h1 {
   font-size: var(--font-size-h1);
+  font-family: var(--font-mont);
+  /* font-weight: 900; */
 }
 
 h2 {
@@ -40,4 +42,17 @@ h3 {
 .more-btn {
   border: 1px solid black;
   padding: 10px 20px;
+  font-family: var(--font-mont);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+header .main-text-box h2 {
+  font-family: var(--font-mont);
+  font-weight: 900;
+}
+
+header .main-text-box h2 span {
+  font-size: 0.8rem;
+  display: block;
 }

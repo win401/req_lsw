@@ -221,28 +221,58 @@
         <span class="select-btn1"><a href="#"></a></span>
         <span class="select-btn2"><a href="#"></a></span>
       </div>
-      <div class="sns">
+      <div class="sns flex">
+        <img src="./helinoxImages/icon_sns_f 1.png" alt="snsfacebook">
+        <img src="./helinoxImages/icon_sns_i.png" alt="snsinsta">
+        <img src="./helinoxImages/sns_3.png" alt="sns3">
+        <img src="./helinoxImages/icon_blog.png" alt="snsblog">
+        <img src="./helinoxImages/icon_yt.png" alt="youtube">
       </div>
+      <div class="footertext">
+        ⓒ2023 Helinox Inc. HCC Busan Community Day. ⓒ2023 Helinox Inc. HCC
+        Busan Community Day. ⓒ2023 Helinox Inc. HCC Busan Community Day. ⓒ2023
+        Helinox Inc. HCC Busan Community Day.
+      </div>
+
     </section>
 
     <section class="section6">
-      <p>
-        ⓒ2023 Helinox Inc. HCC Busan Community Day. ⓒ2023 Helinox Inc. HCC
-        Busan Community Day. ⓒ2023 Helinox Inc. HCC Busan Community Day. ⓒ2023
-        Helinox Inc. HCC Busan Community Day.
-      </p>
-      <div class="kakao"></div>
-      <p>
-        ⓒ2023 Helinox Inc. HCC Busan Community Day. ⓒ2023 Helinox Inc. HCC
-        Busan Community Day. ⓒ2023 Helinox Inc. HCC Busan Community Day. ⓒ2023
-        Helinox Inc. HCC Busan Community Day.
-      </p>
+      <div class="kakao">
+        <!-- * 카카오맵 - 지도퍼가기 -->
+        <!-- 1. 지도 노드 -->
+        <div id="daumRoughmapContainer1684075856349" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+        <!--
+          2. 설치 스크립트
+          * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+        -->
+        <script charset="UTF-8" class="daum_roughmap_loader_script"
+          src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+        <!-- 3. 실행 스크립트 -->
+        <script charset="UTF-8">
+          new daum.roughmap.Lander({
+            "timestamp": "1684075856349",
+            "key": "2es3j",
+            "mapWidth": "1920",
+            "mapHeight": "360"
+          }).render();
+        </script>
+      </div>
     </section>
+    <article>
+      <p>
+        ⓒ2023 Helinox Inc. HCC Busan Community Day. ⓒ2023 Helinox Inc. HCC
+        Busan Community Day. ⓒ2023 Helinox Inc. HCC Busan Community Day. ⓒ2023
+        Helinox Inc. HCC Busan Community Day.
+      </p>
+    </article>
   </main>
   <footer>
-    <div class="high-footer">
+
+    <div class="high-footer flex">
       <div class="left-text">
-        <img src="" alt="logo">
+        <img src="./helinoxImages/black_logo.png" alt="logo">
         <div class="introduce">
           <p>
             헬리녹스 크리에이티브 센터(HCC)는, 헬리녹스의 전 제품을 한자리에서

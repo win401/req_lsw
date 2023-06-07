@@ -1,0 +1,27 @@
+<html>
+
+<body>
+    <script>
+        let userId = 'web'
+        let userPw = 1234
+
+        userId = prompt('아이디를 입력하세요');
+        switch (userId) {
+            case ('web'):
+                userPw = prompt('비밀번호를 입력하세요');
+                userPw = +userPw;
+                if (userPw === 1234) {
+                    alert('로그인 되었습니다');
+                } else {
+                    alert('비밀번호가 틀립니다');
+                }
+                break;
+
+            default:
+                alert('아이디가 틀립니다');
+                break;
+        }
+    </script>
+</body>
+
+</html>
